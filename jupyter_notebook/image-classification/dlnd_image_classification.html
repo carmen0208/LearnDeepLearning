@@ -11786,7 +11786,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11878,7 +11878,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -12079,7 +12079,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -12134,7 +12134,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">one_hot_encode</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -12196,7 +12196,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12223,7 +12223,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12280,7 +12280,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -12372,7 +12372,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">conv2d_maxpool</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">conv_num_outputs</span><span class="p">,</span> <span class="n">conv_ksize</span><span class="p">,</span> <span class="n">conv_strides</span><span class="p">,</span> <span class="n">pool_ksize</span><span class="p">,</span> <span class="n">pool_strides</span><span class="p">):</span>
@@ -12386,6 +12386,7 @@ Keep Prob Tests Passed.
 <span class="sd">    :param pool_strides: Stride 2-D Tuple for pool</span>
 <span class="sd">    : return: A tensor that represents convolution and max pooling of x_tensor</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># TODO: Implement Function</span>
     <span class="n">shape</span> <span class="o">=</span> <span class="n">x_tensor</span><span class="o">.</span><span class="n">get_shape</span><span class="p">()</span><span class="o">.</span><span class="n">as_list</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
     
     <span class="c1"># Weights</span>
@@ -12447,7 +12448,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">):</span>
@@ -12460,6 +12461,7 @@ Keep Prob Tests Passed.
     <span class="n">shape</span> <span class="o">=</span> <span class="n">x_tensor</span><span class="o">.</span><span class="n">get_shape</span><span class="p">()</span><span class="o">.</span><span class="n">as_list</span><span class="p">()</span> <span class="c1"># [None, 10, 30, 6]</span>
     <span class="n">dimension</span> <span class="o">=</span> <span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">shape</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># 18000</span>
     <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="n">dimension</span><span class="p">)])</span>
+
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12501,7 +12503,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fully_conn</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">):</span>
@@ -12559,7 +12561,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">output</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">):</span>
@@ -12574,6 +12576,7 @@ Keep Prob Tests Passed.
     <span class="n">weights</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">truncated_normal</span><span class="p">([</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">num_outputs</span><span class="p">],</span> <span class="n">stddev</span><span class="o">=</span><span class="mf">0.05</span><span class="p">))</span>
     <span class="n">bias</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_outputs</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">weights</span><span class="p">),</span> <span class="n">bias</span><span class="p">)</span>
+
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12623,7 +12626,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">conv_net</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">):</span>
@@ -12740,7 +12743,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train_neural_network</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">keep_probability</span><span class="p">,</span> <span class="n">feature_batch</span><span class="p">,</span> <span class="n">label_batch</span><span class="p">):</span>
@@ -12799,7 +12802,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">feature_batch</span><span class="p">,</span> <span class="n">label_batch</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">):</span>
@@ -12862,7 +12865,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Tune Parameters</span>
@@ -12921,31 +12924,31 @@ Keep Prob Tests Passed.
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Checking the Training on a Single Batch...
-Epoch  1, CIFAR-10 Batch 1:  Loss:     2.2023 , Training Acc: 0.1881, Validation Acc: 0.1682
-Epoch  2, CIFAR-10 Batch 1:  Loss:     2.0852 , Training Acc: 0.2748, Validation Acc: 0.2584
-Epoch  3, CIFAR-10 Batch 1:  Loss:     1.9896 , Training Acc: 0.3020, Validation Acc: 0.3010
-Epoch  4, CIFAR-10 Batch 1:  Loss:     1.9497 , Training Acc: 0.3317, Validation Acc: 0.3274
-Epoch  5, CIFAR-10 Batch 1:  Loss:     1.8828 , Training Acc: 0.3824, Validation Acc: 0.3520
-Epoch  6, CIFAR-10 Batch 1:  Loss:     1.8141 , Training Acc: 0.3651, Validation Acc: 0.3488
-Epoch  7, CIFAR-10 Batch 1:  Loss:     1.7279 , Training Acc: 0.4146, Validation Acc: 0.3948
-Epoch  8, CIFAR-10 Batch 1:  Loss:     1.6557 , Training Acc: 0.4579, Validation Acc: 0.4302
-Epoch  9, CIFAR-10 Batch 1:  Loss:     1.5962 , Training Acc: 0.4653, Validation Acc: 0.4422
-Epoch 10, CIFAR-10 Batch 1:  Loss:     1.6030 , Training Acc: 0.4728, Validation Acc: 0.4316
-Epoch 11, CIFAR-10 Batch 1:  Loss:     1.5660 , Training Acc: 0.4530, Validation Acc: 0.4506
-Epoch 12, CIFAR-10 Batch 1:  Loss:     1.5133 , Training Acc: 0.4963, Validation Acc: 0.4646
-Epoch 13, CIFAR-10 Batch 1:  Loss:     1.4703 , Training Acc: 0.5161, Validation Acc: 0.4692
-Epoch 14, CIFAR-10 Batch 1:  Loss:     1.4383 , Training Acc: 0.5186, Validation Acc: 0.4670
-Epoch 15, CIFAR-10 Batch 1:  Loss:     1.4129 , Training Acc: 0.5384, Validation Acc: 0.4916
-Epoch 16, CIFAR-10 Batch 1:  Loss:     1.3963 , Training Acc: 0.5569, Validation Acc: 0.4940
-Epoch 17, CIFAR-10 Batch 1:  Loss:     1.3570 , Training Acc: 0.5594, Validation Acc: 0.4950
-Epoch 18, CIFAR-10 Batch 1:  Loss:     1.3667 , Training Acc: 0.5408, Validation Acc: 0.4830
-Epoch 19, CIFAR-10 Batch 1:  Loss:     1.3116 , Training Acc: 0.5755, Validation Acc: 0.4990
-Epoch 20, CIFAR-10 Batch 1:  Loss:     1.3052 , Training Acc: 0.5718, Validation Acc: 0.4980
-Epoch 21, CIFAR-10 Batch 1:  Loss:     1.3185 , Training Acc: 0.5619, Validation Acc: 0.4962
-Epoch 22, CIFAR-10 Batch 1:  Loss:     1.2371 , Training Acc: 0.6052, Validation Acc: 0.5050
-Epoch 23, CIFAR-10 Batch 1:  Loss:     1.1967 , Training Acc: 0.6238, Validation Acc: 0.5380
-Epoch 24, CIFAR-10 Batch 1:  Loss:     1.1599 , Training Acc: 0.6300, Validation Acc: 0.5458
-Epoch 25, CIFAR-10 Batch 1:  Loss:     1.1162 , Training Acc: 0.6312, Validation Acc: 0.5442
+Epoch  1, CIFAR-10 Batch 1:  Loss:     2.2236 , Training Acc: 0.1968, Validation Acc: 0.2078
+Epoch  2, CIFAR-10 Batch 1:  Loss:     2.0061 , Training Acc: 0.3267, Validation Acc: 0.3098
+Epoch  3, CIFAR-10 Batch 1:  Loss:     1.9383 , Training Acc: 0.3354, Validation Acc: 0.3198
+Epoch  4, CIFAR-10 Batch 1:  Loss:     1.8273 , Training Acc: 0.3849, Validation Acc: 0.3752
+Epoch  5, CIFAR-10 Batch 1:  Loss:     1.7678 , Training Acc: 0.4047, Validation Acc: 0.3918
+Epoch  6, CIFAR-10 Batch 1:  Loss:     1.6976 , Training Acc: 0.4257, Validation Acc: 0.4022
+Epoch  7, CIFAR-10 Batch 1:  Loss:     1.6778 , Training Acc: 0.4369, Validation Acc: 0.3910
+Epoch  8, CIFAR-10 Batch 1:  Loss:     1.6784 , Training Acc: 0.4406, Validation Acc: 0.3886
+Epoch  9, CIFAR-10 Batch 1:  Loss:     1.6195 , Training Acc: 0.4356, Validation Acc: 0.4332
+Epoch 10, CIFAR-10 Batch 1:  Loss:     1.5740 , Training Acc: 0.4604, Validation Acc: 0.4292
+Epoch 11, CIFAR-10 Batch 1:  Loss:     1.5331 , Training Acc: 0.4765, Validation Acc: 0.4490
+Epoch 12, CIFAR-10 Batch 1:  Loss:     1.5046 , Training Acc: 0.4913, Validation Acc: 0.4662
+Epoch 13, CIFAR-10 Batch 1:  Loss:     1.4727 , Training Acc: 0.5124, Validation Acc: 0.4680
+Epoch 14, CIFAR-10 Batch 1:  Loss:     1.4304 , Training Acc: 0.5186, Validation Acc: 0.4710
+Epoch 15, CIFAR-10 Batch 1:  Loss:     1.3860 , Training Acc: 0.5396, Validation Acc: 0.4944
+Epoch 16, CIFAR-10 Batch 1:  Loss:     1.3714 , Training Acc: 0.5470, Validation Acc: 0.4914
+Epoch 17, CIFAR-10 Batch 1:  Loss:     1.3537 , Training Acc: 0.5631, Validation Acc: 0.5036
+Epoch 18, CIFAR-10 Batch 1:  Loss:     1.2918 , Training Acc: 0.5644, Validation Acc: 0.5054
+Epoch 19, CIFAR-10 Batch 1:  Loss:     1.2922 , Training Acc: 0.5817, Validation Acc: 0.5132
+Epoch 20, CIFAR-10 Batch 1:  Loss:     1.2329 , Training Acc: 0.5978, Validation Acc: 0.5232
+Epoch 21, CIFAR-10 Batch 1:  Loss:     1.2331 , Training Acc: 0.5990, Validation Acc: 0.5316
+Epoch 22, CIFAR-10 Batch 1:  Loss:     1.1792 , Training Acc: 0.6213, Validation Acc: 0.5320
+Epoch 23, CIFAR-10 Batch 1:  Loss:     1.1412 , Training Acc: 0.6275, Validation Acc: 0.5364
+Epoch 24, CIFAR-10 Batch 1:  Loss:     1.1049 , Training Acc: 0.6646, Validation Acc: 0.5448
+Epoch 25, CIFAR-10 Batch 1:  Loss:     1.0964 , Training Acc: 0.6324, Validation Acc: 0.5488
 </pre>
 </div>
 </div>
@@ -13007,50 +13010,98 @@ Epoch 25, CIFAR-10 Batch 1:  Loss:     1.1162 , Training Acc: 0.6312, Validation
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training...
-Epoch  1, CIFAR-10 Batch 1:  Loss:     2.2112 , Training Acc: 0.1609, Validation Acc: 0.1584
-Epoch  1, CIFAR-10 Batch 2:  Loss:     2.0188 , Training Acc: 0.3144, Validation Acc: 0.3140
-Epoch  1, CIFAR-10 Batch 3:  Loss:     1.9270 , Training Acc: 0.3267, Validation Acc: 0.3170
-Epoch  1, CIFAR-10 Batch 4:  Loss:     1.8549 , Training Acc: 0.3639, Validation Acc: 0.3442
-Epoch  1, CIFAR-10 Batch 5:  Loss:     1.7938 , Training Acc: 0.3688, Validation Acc: 0.3730
-Epoch  2, CIFAR-10 Batch 1:  Loss:     1.7267 , Training Acc: 0.4319, Validation Acc: 0.3954
-Epoch  2, CIFAR-10 Batch 2:  Loss:     1.7000 , Training Acc: 0.4381, Validation Acc: 0.4124
-Epoch  2, CIFAR-10 Batch 3:  Loss:     1.6459 , Training Acc: 0.4307, Validation Acc: 0.4216
-Epoch  2, CIFAR-10 Batch 4:  Loss:     1.5740 , Training Acc: 0.4295, Validation Acc: 0.4418
-Epoch  2, CIFAR-10 Batch 5:  Loss:     1.5895 , Training Acc: 0.4629, Validation Acc: 0.4362
-Epoch  3, CIFAR-10 Batch 1:  Loss:     1.5543 , Training Acc: 0.4703, Validation Acc: 0.4568
-Epoch  3, CIFAR-10 Batch 2:  Loss:     1.5519 , Training Acc: 0.4641, Validation Acc: 0.4662
-Epoch  3, CIFAR-10 Batch 3:  Loss:     1.4594 , Training Acc: 0.5025, Validation Acc: 0.4688
-Epoch  3, CIFAR-10 Batch 4:  Loss:     1.4717 , Training Acc: 0.4975, Validation Acc: 0.4752
-Epoch  3, CIFAR-10 Batch 5:  Loss:     1.4682 , Training Acc: 0.5074, Validation Acc: 0.4802
-Epoch  4, CIFAR-10 Batch 1:  Loss:     1.4595 , Training Acc: 0.5099, Validation Acc: 0.4782
-Epoch  4, CIFAR-10 Batch 2:  Loss:     1.4779 , Training Acc: 0.5012, Validation Acc: 0.4738
-Epoch  4, CIFAR-10 Batch 3:  Loss:     1.3974 , Training Acc: 0.5309, Validation Acc: 0.5000
-Epoch  4, CIFAR-10 Batch 4:  Loss:     1.3616 , Training Acc: 0.5297, Validation Acc: 0.5106
-Epoch  4, CIFAR-10 Batch 5:  Loss:     1.3689 , Training Acc: 0.5384, Validation Acc: 0.5078
-Epoch  5, CIFAR-10 Batch 1:  Loss:     1.3394 , Training Acc: 0.5408, Validation Acc: 0.5230
-Epoch  5, CIFAR-10 Batch 2:  Loss:     1.3978 , Training Acc: 0.5371, Validation Acc: 0.5068
-Epoch  5, CIFAR-10 Batch 3:  Loss:     1.3038 , Training Acc: 0.5507, Validation Acc: 0.5196
-Epoch  5, CIFAR-10 Batch 4:  Loss:     1.2795 , Training Acc: 0.5829, Validation Acc: 0.5288
-Epoch  5, CIFAR-10 Batch 5:  Loss:     1.2810 , Training Acc: 0.5928, Validation Acc: 0.5434
-Epoch  6, CIFAR-10 Batch 1:  Loss:     1.2651 , Training Acc: 0.5767, Validation Acc: 0.5432
-Epoch  6, CIFAR-10 Batch 2:  Loss:     1.3124 , Training Acc: 0.5631, Validation Acc: 0.5348
-Epoch  6, CIFAR-10 Batch 3:  Loss:     1.2226 , Training Acc: 0.5941, Validation Acc: 0.5510
-Epoch  6, CIFAR-10 Batch 4:  Loss:     1.1882 , Training Acc: 0.5842, Validation Acc: 0.5546
-Epoch  6, CIFAR-10 Batch 5:  Loss:     1.1780 , Training Acc: 0.6126, Validation Acc: 0.5686
-Epoch  7, CIFAR-10 Batch 1:  Loss:     1.1705 , Training Acc: 0.6089, Validation Acc: 0.5788
-Epoch  7, CIFAR-10 Batch 2:  Loss:     1.2159 , Training Acc: 0.5978, Validation Acc: 0.5706
-Epoch  7, CIFAR-10 Batch 3:  Loss:     1.1841 , Training Acc: 0.6300, Validation Acc: 0.5790
-Epoch  7, CIFAR-10 Batch 4:  Loss:     1.1324 , Training Acc: 0.6101, Validation Acc: 0.5708
-Epoch  7, CIFAR-10 Batch 5:  Loss:     1.1259 , Training Acc: 0.6262, Validation Acc: 0.5778
-Epoch  8, CIFAR-10 Batch 1:  Loss:     1.1490 , Training Acc: 0.6015, Validation Acc: 0.5836
-Epoch  8, CIFAR-10 Batch 2:  Loss:     1.1168 , Training Acc: 0.6250, Validation Acc: 0.5932
-Epoch  8, CIFAR-10 Batch 3:  Loss:     1.0997 , Training Acc: 0.6188, Validation Acc: 0.5754
-Epoch  8, CIFAR-10 Batch 4:  Loss:     1.0642 , Training Acc: 0.6460, Validation Acc: 0.6034
-Epoch  8, CIFAR-10 Batch 5:  Loss:     1.0691 , Training Acc: 0.6510, Validation Acc: 0.5958
-Epoch  9, CIFAR-10 Batch 1:  Loss:     1.0602 , Training Acc: 0.6411, Validation Acc: 0.6006
-Epoch  9, CIFAR-10 Batch 2:  Loss:     1.0996 , Training Acc: 0.6423, Validation Acc: 0.6032
-Epoch  9, CIFAR-10 Batch 3:  Loss:     1.0152 , Training Acc: 0.6597, Validation Acc: 0.6110
-Epoch  9, CIFAR-10 Batch 4:  Loss:     1.0133 , Training Acc: 0.6621, Validation Acc: 0.6212
+Epoch  1, CIFAR-10 Batch 1:  Loss:     2.2085 , Training Acc: 0.1399, Validation Acc: 0.1270
+Epoch  1, CIFAR-10 Batch 2:  Loss:     2.0149 , Training Acc: 0.3069, Validation Acc: 0.3042
+Epoch  1, CIFAR-10 Batch 3:  Loss:     1.8915 , Training Acc: 0.3651, Validation Acc: 0.3370
+Epoch  1, CIFAR-10 Batch 4:  Loss:     1.8304 , Training Acc: 0.3762, Validation Acc: 0.3692
+Epoch  1, CIFAR-10 Batch 5:  Loss:     1.7992 , Training Acc: 0.3626, Validation Acc: 0.3926
+Epoch  2, CIFAR-10 Batch 1:  Loss:     1.7558 , Training Acc: 0.3936, Validation Acc: 0.3830
+Epoch  2, CIFAR-10 Batch 2:  Loss:     1.7079 , Training Acc: 0.4295, Validation Acc: 0.4166
+Epoch  2, CIFAR-10 Batch 3:  Loss:     1.5930 , Training Acc: 0.4691, Validation Acc: 0.4408
+Epoch  2, CIFAR-10 Batch 4:  Loss:     1.5788 , Training Acc: 0.4530, Validation Acc: 0.4328
+Epoch  2, CIFAR-10 Batch 5:  Loss:     1.6010 , Training Acc: 0.4802, Validation Acc: 0.4490
+Epoch  3, CIFAR-10 Batch 1:  Loss:     1.5622 , Training Acc: 0.4443, Validation Acc: 0.4498
+Epoch  3, CIFAR-10 Batch 2:  Loss:     1.5515 , Training Acc: 0.4678, Validation Acc: 0.4696
+Epoch  3, CIFAR-10 Batch 3:  Loss:     1.4542 , Training Acc: 0.5210, Validation Acc: 0.4730
+Epoch  3, CIFAR-10 Batch 4:  Loss:     1.4603 , Training Acc: 0.4988, Validation Acc: 0.4886
+Epoch  3, CIFAR-10 Batch 5:  Loss:     1.4475 , Training Acc: 0.5384, Validation Acc: 0.4932
+Epoch  4, CIFAR-10 Batch 1:  Loss:     1.4083 , Training Acc: 0.5210, Validation Acc: 0.5102
+Epoch  4, CIFAR-10 Batch 2:  Loss:     1.4635 , Training Acc: 0.5235, Validation Acc: 0.5044
+Epoch  4, CIFAR-10 Batch 3:  Loss:     1.3797 , Training Acc: 0.5248, Validation Acc: 0.5048
+Epoch  4, CIFAR-10 Batch 4:  Loss:     1.3636 , Training Acc: 0.5210, Validation Acc: 0.5210
+Epoch  4, CIFAR-10 Batch 5:  Loss:     1.3588 , Training Acc: 0.5470, Validation Acc: 0.5196
+Epoch  5, CIFAR-10 Batch 1:  Loss:     1.3450 , Training Acc: 0.5644, Validation Acc: 0.5270
+Epoch  5, CIFAR-10 Batch 2:  Loss:     1.3652 , Training Acc: 0.5668, Validation Acc: 0.5308
+Epoch  5, CIFAR-10 Batch 3:  Loss:     1.2744 , Training Acc: 0.5693, Validation Acc: 0.5398
+Epoch  5, CIFAR-10 Batch 4:  Loss:     1.3036 , Training Acc: 0.5656, Validation Acc: 0.5354
+Epoch  5, CIFAR-10 Batch 5:  Loss:     1.2824 , Training Acc: 0.5842, Validation Acc: 0.5486
+Epoch  6, CIFAR-10 Batch 1:  Loss:     1.2538 , Training Acc: 0.5767, Validation Acc: 0.5518
+Epoch  6, CIFAR-10 Batch 2:  Loss:     1.3011 , Training Acc: 0.5767, Validation Acc: 0.5616
+Epoch  6, CIFAR-10 Batch 3:  Loss:     1.1935 , Training Acc: 0.5891, Validation Acc: 0.5624
+Epoch  6, CIFAR-10 Batch 4:  Loss:     1.2150 , Training Acc: 0.6002, Validation Acc: 0.5640
+Epoch  6, CIFAR-10 Batch 5:  Loss:     1.1781 , Training Acc: 0.6213, Validation Acc: 0.5714
+Epoch  7, CIFAR-10 Batch 1:  Loss:     1.1837 , Training Acc: 0.6262, Validation Acc: 0.5724
+Epoch  7, CIFAR-10 Batch 2:  Loss:     1.3140 , Training Acc: 0.5433, Validation Acc: 0.5372
+Epoch  7, CIFAR-10 Batch 3:  Loss:     1.1528 , Training Acc: 0.6040, Validation Acc: 0.5500
+Epoch  7, CIFAR-10 Batch 4:  Loss:     1.2087 , Training Acc: 0.5990, Validation Acc: 0.5670
+Epoch  7, CIFAR-10 Batch 5:  Loss:     1.1533 , Training Acc: 0.6176, Validation Acc: 0.5900
+Epoch  8, CIFAR-10 Batch 1:  Loss:     1.1669 , Training Acc: 0.6200, Validation Acc: 0.5834
+Epoch  8, CIFAR-10 Batch 2:  Loss:     1.1493 , Training Acc: 0.6064, Validation Acc: 0.5762
+Epoch  8, CIFAR-10 Batch 3:  Loss:     1.0659 , Training Acc: 0.6361, Validation Acc: 0.6026
+Epoch  8, CIFAR-10 Batch 4:  Loss:     1.1101 , Training Acc: 0.6300, Validation Acc: 0.5862
+Epoch  8, CIFAR-10 Batch 5:  Loss:     1.0503 , Training Acc: 0.6584, Validation Acc: 0.6070
+Epoch  9, CIFAR-10 Batch 1:  Loss:     1.1200 , Training Acc: 0.6300, Validation Acc: 0.5924
+Epoch  9, CIFAR-10 Batch 2:  Loss:     1.1195 , Training Acc: 0.6535, Validation Acc: 0.6100
+Epoch  9, CIFAR-10 Batch 3:  Loss:     1.0501 , Training Acc: 0.6374, Validation Acc: 0.5844
+Epoch  9, CIFAR-10 Batch 4:  Loss:     1.0332 , Training Acc: 0.6522, Validation Acc: 0.6094
+Epoch  9, CIFAR-10 Batch 5:  Loss:     1.0065 , Training Acc: 0.6671, Validation Acc: 0.6184
+Epoch 10, CIFAR-10 Batch 1:  Loss:     1.0361 , Training Acc: 0.6621, Validation Acc: 0.6158
+Epoch 10, CIFAR-10 Batch 2:  Loss:     1.0379 , Training Acc: 0.6324, Validation Acc: 0.6092
+Epoch 10, CIFAR-10 Batch 3:  Loss:     0.9986 , Training Acc: 0.6473, Validation Acc: 0.6098
+Epoch 10, CIFAR-10 Batch 4:  Loss:     1.0072 , Training Acc: 0.6720, Validation Acc: 0.6234
+Epoch 10, CIFAR-10 Batch 5:  Loss:     0.9419 , Training Acc: 0.7129, Validation Acc: 0.6342
+Epoch 11, CIFAR-10 Batch 1:  Loss:     0.9607 , Training Acc: 0.6856, Validation Acc: 0.6278
+Epoch 11, CIFAR-10 Batch 2:  Loss:     0.9803 , Training Acc: 0.6931, Validation Acc: 0.6386
+Epoch 11, CIFAR-10 Batch 3:  Loss:     0.8975 , Training Acc: 0.6993, Validation Acc: 0.6448
+Epoch 11, CIFAR-10 Batch 4:  Loss:     0.9022 , Training Acc: 0.6980, Validation Acc: 0.6454
+Epoch 11, CIFAR-10 Batch 5:  Loss:     0.8876 , Training Acc: 0.7252, Validation Acc: 0.6458
+Epoch 12, CIFAR-10 Batch 1:  Loss:     1.0090 , Training Acc: 0.7079, Validation Acc: 0.6338
+Epoch 12, CIFAR-10 Batch 2:  Loss:     0.9434 , Training Acc: 0.6819, Validation Acc: 0.6388
+Epoch 12, CIFAR-10 Batch 3:  Loss:     0.9161 , Training Acc: 0.6968, Validation Acc: 0.6250
+Epoch 12, CIFAR-10 Batch 4:  Loss:     0.9484 , Training Acc: 0.6894, Validation Acc: 0.6150
+Epoch 12, CIFAR-10 Batch 5:  Loss:     0.9110 , Training Acc: 0.7314, Validation Acc: 0.6408
+Epoch 13, CIFAR-10 Batch 1:  Loss:     0.9216 , Training Acc: 0.7005, Validation Acc: 0.6396
+Epoch 13, CIFAR-10 Batch 2:  Loss:     0.8882 , Training Acc: 0.7265, Validation Acc: 0.6598
+Epoch 13, CIFAR-10 Batch 3:  Loss:     0.8348 , Training Acc: 0.7252, Validation Acc: 0.6610
+Epoch 13, CIFAR-10 Batch 4:  Loss:     0.8507 , Training Acc: 0.7413, Validation Acc: 0.6598
+Epoch 13, CIFAR-10 Batch 5:  Loss:     0.7892 , Training Acc: 0.7649, Validation Acc: 0.6602
+Epoch 14, CIFAR-10 Batch 1:  Loss:     0.8084 , Training Acc: 0.7401, Validation Acc: 0.6662
+Epoch 14, CIFAR-10 Batch 2:  Loss:     0.9010 , Training Acc: 0.7005, Validation Acc: 0.6476
+Epoch 14, CIFAR-10 Batch 3:  Loss:     0.8376 , Training Acc: 0.7178, Validation Acc: 0.6494
+Epoch 14, CIFAR-10 Batch 4:  Loss:     0.8218 , Training Acc: 0.7265, Validation Acc: 0.6554
+Epoch 14, CIFAR-10 Batch 5:  Loss:     0.7745 , Training Acc: 0.7649, Validation Acc: 0.6638
+Epoch 15, CIFAR-10 Batch 1:  Loss:     0.7550 , Training Acc: 0.7562, Validation Acc: 0.6754
+Epoch 15, CIFAR-10 Batch 2:  Loss:     0.8013 , Training Acc: 0.7401, Validation Acc: 0.6696
+Epoch 15, CIFAR-10 Batch 3:  Loss:     0.7336 , Training Acc: 0.7537, Validation Acc: 0.6718
+Epoch 15, CIFAR-10 Batch 4:  Loss:     0.7449 , Training Acc: 0.7599, Validation Acc: 0.6826
+Epoch 15, CIFAR-10 Batch 5:  Loss:     0.7089 , Training Acc: 0.7946, Validation Acc: 0.6862
+Epoch 16, CIFAR-10 Batch 1:  Loss:     0.6894 , Training Acc: 0.7809, Validation Acc: 0.6886
+Epoch 16, CIFAR-10 Batch 2:  Loss:     0.7443 , Training Acc: 0.7562, Validation Acc: 0.6878
+Epoch 16, CIFAR-10 Batch 3:  Loss:     0.7407 , Training Acc: 0.7636, Validation Acc: 0.6732
+Epoch 16, CIFAR-10 Batch 4:  Loss:     0.7204 , Training Acc: 0.7809, Validation Acc: 0.6846
+Epoch 16, CIFAR-10 Batch 5:  Loss:     0.6819 , Training Acc: 0.7834, Validation Acc: 0.6828
+Epoch 17, CIFAR-10 Batch 1:  Loss:     0.6932 , Training Acc: 0.7772, Validation Acc: 0.6884
+Epoch 17, CIFAR-10 Batch 2:  Loss:     0.7041 , Training Acc: 0.7896, Validation Acc: 0.6886
+Epoch 17, CIFAR-10 Batch 3:  Loss:     0.6335 , Training Acc: 0.7921, Validation Acc: 0.6942
+Epoch 17, CIFAR-10 Batch 4:  Loss:     0.6627 , Training Acc: 0.7995, Validation Acc: 0.6962
+Epoch 17, CIFAR-10 Batch 5:  Loss:     0.6201 , Training Acc: 0.8082, Validation Acc: 0.6966
+Epoch 18, CIFAR-10 Batch 1:  Loss:     0.5922 , Training Acc: 0.8106, Validation Acc: 0.7000
+Epoch 18, CIFAR-10 Batch 2:  Loss:     0.6750 , Training Acc: 0.7995, Validation Acc: 0.6956
+Epoch 18, CIFAR-10 Batch 3:  Loss:     0.6397 , Training Acc: 0.7970, Validation Acc: 0.6936
+Epoch 18, CIFAR-10 Batch 4:  Loss:     0.6298 , Training Acc: 0.7995, Validation Acc: 0.6970
+Epoch 18, CIFAR-10 Batch 5:  Loss:     0.5920 , Training Acc: 0.8267, Validation Acc: 0.6918
+Epoch 19, CIFAR-10 Batch 1:  Loss:     0.6012 , Training Acc: 0.7995, Validation Acc: 0.6840
+Epoch 19, CIFAR-10 Batch 2:  Loss:     0.6582 , Training Acc: 0.7921, Validation Acc: 0.7064
 </pre>
 </div>
 </div>
