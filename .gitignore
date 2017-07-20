@@ -4,4 +4,5 @@ deep-learning/*
 deep-learning
 **/*.zip
 **/*.pickle
+**/*.gz
 **/*.floyd*
