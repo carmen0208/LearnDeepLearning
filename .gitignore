@@ -6,3 +6,4 @@ deep-learning
 **/*.pickle
 **/*.gz
 **/*.floyd*
+**/data/**
