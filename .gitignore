@@ -1,7 +1,10 @@
 deep-learning/*
+**/cifar-10-batches-py
 .DS_Store
 .ipynb_checkpoints/
 deep-learning
+How-to-Predict-Stock-Prices-Easily-Demo
+How-to-Generate-Art-Demo
 **/*.zip
 **/*.pickle
 **/*.gz
